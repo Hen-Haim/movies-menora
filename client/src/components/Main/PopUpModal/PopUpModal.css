@@ -1,0 +1,56 @@
+.popUpModal {
+  z-index: 20000;
+  pointer-events: none;
+}
+
+.my-modal-header {
+  background-color: rgba(0, 0, 0, 0.815);
+  color: rgb(44, 158, 211);
+}
+
+.my-modal-header > h5 {
+  color: rgb(44, 158, 211);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 27px;
+  font-stretch: extra-condensed;
+  font-weight: 900;
+}
+
+.btn-x {
+  border: none;
+  background-color: rgb(44, 158, 211);
+}
+
+.btn-x:hover {
+  color: rgba(81, 144, 187, 0.541);
+}
+
+.my-modal-dialog {
+  pointer-events: all;
+}
+
+.my-modal-body {
+  font-size: 22px;
+  font-family: "Ubuntu";
+  height: 400px;
+}
+
+.main-content-modal {
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.733);
+  height: 100%;
+  width: 100%;
+  padding: 60px 20px 20px 20px;
+}
+
+.main-content-modal > h5 {
+  color: white;
+  font-family: Tahoma, sans-serif;
+  font-size: 22px;
+}
+
+.main-content-modal > h5 span {
+  color: #ff008c;
+  font-family: fantasy;
+  font-size: 25px;
+}

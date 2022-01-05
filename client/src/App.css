@@ -1,0 +1,194 @@
+.app {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 86% 4%;
+    grid-template-columns:repeat(12,1fr);
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:  Geneva, Verdana, sans-serif;
+    color:black;
+    overflow:hidden;
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+.app > header{
+    grid-row: 1/2;
+    grid-column:span 12;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.app > main{
+    grid-row: 2 / 3;
+    grid-column:span 12;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.app > footer{
+    grid-row: 3 / 4;
+    grid-column:span 12;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:rgba(21,96,131,.589);
+    color:white;
+    text-align: center;
+}
+
+.logo{
+    width:50px;
+    height: 50px;
+    align-self: center;
+    border-radius: 17%;
+    margin-right:10px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 0 3vw 0 3vw;
+    justify-content: space-between;
+    text-align: center;
+    font-size: small;
+    font-stretch: extra-condensed;
+    color:rgb(0, 98, 143);
+}
+
+.div-for-search{
+    flex:1;
+    padding: 0px 0 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+}
+
+.my-search-btn{
+    margin: 0 0 0 10px ;
+    width: 40px;
+    height:36px;
+}
+
+.search-icon{
+    color: rgb(0, 112, 163); 
+    width: max-content;
+    height: max-content;
+    font-size: 20px;
+    margin: 0 10px 0 0;
+}
+
+.my-form-control{
+    height:36px;
+}
+
+.header-div-app{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+}
+
+.switch-container{
+    align-self: center;
+}
+
+.header-div-app>h1{
+    padding: 0;
+    margin:0;
+    align-self: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.header-div-app>h1>span{
+    color:#ff008c;
+    font-size: larger;
+}
+
+.nav{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.nav > a{
+    flex:1;
+    border-left: solid 2px rgb(31, 108, 145); 
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight:bold;
+    color:rgb(44, 158, 211);
+}
+
+.nav > a:hover{
+    opacity:0.6;
+}
+
+section{
+    position: fixed;
+    top:70px;
+    left:33vw;
+    width:30vw;
+    height: max-content;
+    font-size: 12px;
+    border-radius: 7px;
+    padding: 2px 2px;
+    font-size: 15px;
+    text-align: center;
+    color:white ;
+    border: solid white 1px;
+    background-color: transparent ;
+}
+
+.dark-btn{
+    background-color: rgb(17, 76, 104);
+    color:white;
+    border:rgb(209, 209, 209) 3px solid;
+    text-shadow: 1px 1px 7px white;
+}
+
+@media screen and (max-width: 976px) {
+    .header-div-app>h1{font-size: 2.5vw}
+    .logo{width:5.2vw; height:5.2vw;}
+    header{ padding: 0 10px 0 10px;}
+    .nav{ width:44vw; }
+    .nav > a{font-size:2vw}
+}
+
+@media screen and (max-width: 770px) {
+    .header-div-app>h1{font-size: 2.8vh}
+    .logo{width:5.2vh; height:5.2vh;}
+    .nav{ width:42vh; }
+    .nav > a{font-size:2vh}
+}
+
+@media screen and (max-width: 627px) {
+    .header-div-app>h1{font-size: 3.7vh}
+    .logo{width:5.2vh; height:5.2vh;}
+    header{ flex-direction:column; justify-content: space-around; align-items: center;}
+    .nav{ width:42vh; }
+    .nav > a{font-size:2vh}
+    .app { grid-template-rows: 25% 75% 4%;}
+    .my-input-group { width: 72vw;}
+}
+
+@media screen and (max-width: 310px) {
+    .logo{width:4.3vh; height:4.3vh;}
+    .header-div-app>h1{font-size: 2.8vh}
+    .nav{ width:32vh; }
+    .nav > a{font-size:1.7vh;}
+}
+
+@media screen and (max-width: 240px) {
+    .logo{width:3.6vh; height:3.6vh; margin-right:2px}
+    .header-div-app>h1{font-size: 2.2vh}
+    .nav{ width:25vh; }
+    .nav > a{font-size:1.3vh;}
+}

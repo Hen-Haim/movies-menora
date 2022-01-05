@@ -1,0 +1,30 @@
+.home-card-img{
+    height:135px;
+    width:105px;
+    border-radius: 15px;
+}
+
+.home-card{
+    height:165px;   
+    width:125px;
+    cursor: pointer;
+    opacity: 0.75;
+    margin: 10px;
+}
+
+.home-card:hover .home-card-img{
+    height:165px;   
+    width:125px;
+    transition: all 0.5s;
+}
+
+.home-card:hover {
+    opacity:1;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 1067px) {
+    .home-card-img{ height:24vw; width:17vw; }
+    .home-card{ height:28vw; width:20vw; }
+    .home-card:hover .home-card-img{ height:28vw; width:20vw; }
+}
